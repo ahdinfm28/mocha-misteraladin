@@ -4,7 +4,7 @@ const request = supertest("https://www.misteraladin.com/api/members/");
 
 describe("Login Mister Aladin", () => {
   describe("Positive Case", () => {
-    it("Success - register with email password", () => {
+    it("Success - login with email password", () => {
       const data = {
         email: "farisyaaah@gmail.com",
         password: "frsyhdn"
@@ -16,7 +16,7 @@ describe("Login Mister Aladin", () => {
           expect(res.status).to.equal(200);
         });
     });
-    it("Success - register with phone", () => {
+    it("Success - login with phone", () => {
       const data = {
         phone_number: 85608869638,
         phone_number_country_code: "62"
