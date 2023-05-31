@@ -12,7 +12,6 @@ describe("Register Mister Aladin", () => {
       };
       return request
         .post("auth/register-check")
-        //  .set("Authorization", 'Bearer null')
         .send(data)
         .then((res) => {
           expect(res.status).to.equal(204);
@@ -28,7 +27,6 @@ describe("Register Mister Aladin", () => {
       };
       return request
         .post("auth/register-check")
-        //  .set("Authorization", 'Bearer null')
         .send(data)
         .then((res) => {
           expect(res.status).to.equal(422);
@@ -43,7 +41,6 @@ describe("Register Mister Aladin", () => {
       };
       return request
         .post("auth/register-check")
-        //  .set("Authorization", 'Bearer null')
         .send(data)
         .then((res) => {
           expect(res.status).to.equal(422);
@@ -58,7 +55,6 @@ describe("Register Mister Aladin", () => {
       };
       return request
         .post("auth/register-check")
-        //  .set("Authorization", 'Bearer null')
         .send(data)
         .then((res) => {
           expect(res.status).to.equal(422);
